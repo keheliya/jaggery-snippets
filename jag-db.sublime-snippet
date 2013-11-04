@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+	<%
+	var db = new Database("${1:jdbc:h2:tmp/demo}", "${2:admin}", "${3:admin}");
+	
+	db.query("${4:INSERT INTO demo VALUES('WSO2','59 Flower Rd'), ('WSO2 UK', 'Emsworth, Hampshire, UK');}");
+	
+	var result = db.query("${5:SELECT * FROM demo}");
+	
+	print(result);
+	%>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>db</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>text.jag</scope> -->
+</snippet>

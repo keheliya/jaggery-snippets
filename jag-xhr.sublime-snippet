@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+	<%
+	var url = '${1:http://jaggeryjs.org/apidocs/resources/home.jag}';
+	var xhr = new XMLHttpRequest();
+	xhr.open("${2:GET}", url);
+	xhr.setRequestHeader("${3:user}" , "${4:madhuka}");
+	xhr.send();
+	
+	${5:print("ReadyState : "+xhr.readyState);
+	print("<br>ResponseStatus : "+xhr.status);
+	print("<br>ResponseText : "+xhr.responseText);}
+	%>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>xhr</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

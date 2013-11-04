@@ -1,0 +1,45 @@
+<snippet>
+	<content><![CDATA[
+		{
+	"displayName":"${1:Minimal Sample}",
+	"welcomeFiles":${2:["index.jag", "index.html"]},
+	"logLevel" : "${3:debug}",
+	"errorPages":[
+		{
+			"errorCode":"500",
+			"location":"${4:/error1.html}"
+		},
+		{
+			"errorCode":"404",
+			"location":"${5:/error.html}"
+		}
+	],
+	"securityConstraints":[
+		{
+			"securityConstraint":{
+				"webResourceCollection":{
+					"name":"${6:foo}",
+					"urlPatterns":${7:["/bar/*"],}
+					"methods":${8:["GET", "POST", "PUT", "DELETE"]}
+				},
+				"authRoles":${9:["admin"]}
+			}
+		}
+	],
+	"loginConfig":{
+		"authMethod":${10:"BASIC"}
+	},
+	"securityRoles":["${9:admin}", "everyone"],
+	"urlMappings" : [
+		{
+			"url" : "${11:/sample/uri-mapping}",
+			"path" : "${12:/index.jag}"
+		}
+	]
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>config</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

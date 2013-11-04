@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+	<%
+	var accessToken = ${1:linkedin}.getAccessToken("${2:3741501}");
+	var response = linkedin.sendOAuthRequest(accessToken, "${3:GET}", "${4:http://api.linkedin.com/v1/groups/59053/posts?count=20&start=1&format=json}");
+	${5:print(response.getBody());}
+	%>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>oauthreq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
