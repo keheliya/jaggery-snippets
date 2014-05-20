@@ -3,6 +3,8 @@ jaggery-snippets
 
 This is a **Jaggery.js** snippets collection for [Sublime Text (2|3)](http://www.sublimetext.com/). BTW, [Jaggery](http://jaggeryjs.org/) is a framework to write webapps and HTTP-focused web services for all aspects of the application: front-end, communication, Server-side logic and persistence in pure **Javascript**. Learn more from [jaggery API docs](http://jaggeryjs.org/documentation.jag)
 
+**Note:** This project is now subsumed into [jaggeryjs-sublime-text](https://github.com/dakshika/jaggeryjs-sublime-text) as mentioned in [#3249](https://github.com/wbond/package_control_channel/pull/3249)
+
 ## Install
 
 To install through [Package Control](http://wbond.net/sublime_packages/package_control), in Sublime Text 2/3 press `⌘+shift+p` (or `ctrl+shift+p`), enter `Install Package`, and then search for **Jaggery Snippets**. If you still don't have Package Control in Sublime Text, [go get it](http://wbond.net/sublime_packages/package_control/installation).
